@@ -87,6 +87,11 @@
       #footer a { color: #3CA7DD; text-decoration: none; font-weight: bold; }
       #permission-reminder { white-space: pre-wrap; }
       #street-address { color: #B3B3B3; white-space: pre-wrap; }
+
+      /* PTV style */
+      .issue { font-size: 20px; font-weight: bold; color: #676767; }
+      .date { font-size: 14px; color: #555;}
+      .featured-title { font-size: 22px; font-weight: bold; color: #316169; padding: 2px 30px; }
       </style>
 <!--[if gte mso 9]>
 <style _tmplitem="277" >
@@ -100,253 +105,277 @@
 <tbody><tr>
   <td align="center" bgcolor="#E4E4E4">
     <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
-    <tbody>
-      <tr><td class="w640" width="640" height="20"></td></tr>
-      <tr>
-        <td class="w640" width="640">
-          <table id="top-bar" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
-            <tbody>
-              <tr>
-                <td class="w15" width="15"></td>
-                <td class="w325" width="350" valign="middle" align="left">
-                  <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="w325" width="350" height="8"></td></tr></tbody>
-                  </table>
-                  <div class="header-content"><webversion>Web version</webversion><span class="hide">&nbsp;&nbsp;|&nbsp; <preferences>Update preferences</preferences>&nbsp;&nbsp;|&nbsp; <unsubscribe>Unsubscribe</unsubscribe></span></div>
-                  <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
-                    <tbody><tr><td class="w325" width="350" height="8"></td></tr></tbody>
-                  </table>
-                </td>
-                <td class="w30" width="30"></td>
-                <td class="w255" width="255" valign="middle" align="right"></td>
-                <td class="w15" width="15"></td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-      </tr>
-              <tr>
-                <td id="header" class="w640" width="640" align="center" bgcolor="#ffffff">
-
-                  <div align="center" style="text-align: center"><img id="customHeaderImage" src="images/header.jpg" class="w640" border="0" align="top" style="display: inline"></div>
-
-
-                </td>
-              </tr>
-
-              <tr><td class="w640" width="640" height="30" bgcolor="#ffffff"></td></tr>
-              <tr id="simple-content-row"><td class="w640" width="640" bgcolor="#ffffff">
-                <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
-                  <tbody><tr>
-                    <td class="w30" width="30"></td>
-                    <td class="w580" width="580">
-                      <repeater>
-
-                        <layout label="Text only">
-                          <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
-                              <td class="w580" width="580">
-                                <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                                <div align="left" class="article-content">
-                                  <multiline label="Description">Enter your description</multiline>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr><td class="w580" width="580" height="10"></td></tr>
-                          </tbody></table>
-                        </layout>
-
-
-                        <layout label="Text with full-width image">
-                          <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
-                              <td class="w580" width="580">
-                                <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                              </td>
-                            </tr>
+      <tbody>
+        <tr><td class="w640" width="640" height="20"></td></tr>
+        <tr id="top-bar">
+          <td class="w640" width="640">
+            <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+              <tbody>
+                <tr>
+                  <td class="w15" width="15"></td>
+                  <td class="w325" width="350" valign="middle" align="left">
+                    <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr><td class="w325" width="350" height="8"></td></tr></tbody>
+                    </table>
+                    <div class="header-content"><webversion>Web version</webversion><span class="hide">&nbsp;&nbsp;|&nbsp; <preferences>Update preferences</preferences>&nbsp;&nbsp;|&nbsp; <unsubscribe>Unsubscribe</unsubscribe></span></div>
+                    <table class="w325" width="350" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr><td class="w325" width="350" height="8"></td></tr></tbody>
+                    </table>
+                  </td>
+                  <td class="w30" width="30"></td>
+                  <td class="w255" width="255" valign="middle" align="right"></td>
+                  <td class="w15" width="15"></td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr id="header">
+          <td class="w640" width="640" height="153" background="images/bg_top.png">
+            <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+              <tbody>
+                <tr>
+                  <td class="w470" width="470" valign="middle" align="left">
+                    <div><img src="images/logo_transparent.png" border="0" align="top" style="display: inline"></div>
+                  </td>
+                  <td class="w140" width="140" align="left">
+                    <layout label="Text only">
+                        <table class="w140" width="140" cellpadding="0" cellspacing="0" border="0">
+                          <tbody>
+                            <tr><td class="w140" width="140" height="50"></td></tr>
                             <tr>
-                              <td class="w580" width="580"><img editable="true" label="Image" class="w580" width="580" border="0"></td>
-                            </tr>
-                            <tr><td class="w580" width="580" height="15"></td></tr>
-                            <tr>
-                              <td class="w580" width="580">
-                                <div align="left" class="article-content">
-                                  <multiline label="Description">Enter your description</multiline>
-                                </div>
+                              <td class="w140" width="140" align="right" style="text-align: right">
+                                  <div align="left" class="issue"><singleline label="Issue">Add an issue</singleline></div>
+                                  <div align="left" class="date"><singleline label="Date">Add a date</singleline></div>
                               </td>
                             </tr>
-                            <tr><td class="w580" width="580" height="10"></td></tr>
-                          </tbody></table>
-                        </layout>
+                          </tbody>
+                        </table>
+                    </layout>
+                  </td>
+                  <td class="w30" width="30"></td>                 
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+        <tr id="featured-title">
+          <td class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#fff">
+            <div class="featured-title"><singleline label="Featured Title">Enter Featured Title Here</singleline></div>
+          </td>
+        </tr>
+        <tr id="simple-content-row"><td class="w640" width="640" bgcolor="#ffffff">
+          <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
+            <tbody><tr>
+              <td class="w30" width="30"></td>
+              <td class="w580" width="580">
+                <repeater>
 
-
-                        <layout label="Text with right-aligned image">
-                          <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
-                              <td class="w580" width="580">
-                                <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                                <table cellpadding="0" cellspacing="0" border="0" align="right">
-                                  <tbody><tr>
-                                    <td class="w30" width="15"></td>
-                                    <td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
-                                  </tr>
-                                  <tr><td class="w30" width="15" height="5"></td><td></td></tr>
-                                </tbody></table>
-                                <div align="left" class="article-content">
-                                  <multiline label="Description">Enter your description</multiline>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr><td class="w580" width="580" height="10"></td></tr>
-                          </tbody></table>
-                        </layout>
-
-
-                        <layout label="Text with left-aligned image">
-                          <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
-                              <td class="w580" width="580">
-                                <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                                <table cellpadding="0" cellspacing="0" border="0" align="left">
-                                  <tbody><tr>
-                                    <td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
-                                    <td class="w30" width="15"></td>
-                                  </tr>
-                                  <tr><td></td><td class="w30" width="15" height="5"></td></tr>
-                                </tbody></table>
-                                <div align="left" class="article-content">
-                                  <multiline label="Description">Enter your description</multiline>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr><td class="w580" width="580" height="10"></td></tr>
-                          </tbody></table>
-                        </layout>
-
-
-                        <layout label="Two columns">
-                          <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
-                              <td class="w275" width="275" valign="top">
-                                <table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
-                                  <tbody><tr>
-                                    <td class="w275" width="275">
-                                      <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                                      <div align="left" class="article-content">
-                                        <multiline label="Description">Enter your description</multiline>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr><td class="w275" width="275" height="10"></td></tr>
-                                </tbody></table>
-                              </td>
-                              <td class="w30" width="30"></td>
-                              <td class="w275" width="275" valign="top">
-                                <table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
-                                  <tbody><tr>
-                                    <td class="w275" width="275">
-                                      <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
-                                      <div align="left" class="article-content">
-                                        <multiline label="Description">Enter your description</multiline>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr><td class="w275" width="275" height="10"></td></tr>
-                                </tbody></table>
-                              </td>
-                            </tr>
-                          </tbody></table>
-                        </layout>
-
-
-
-                        <layout label="Image gallery">
-                          <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
-                            <tbody><tr>
-                              <td class="w180" width="180" valign="top">
-                                <table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
-                                  <tbody><tr>
-                                    <td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
-                                  </tr>
-                                  <tr><td class="w180" width="180" height="10"></td></tr>
-                                  <tr>
-                                    <td class="w180" width="180">
-                                      <div align="left" class="article-content">
-                                        <multiline label="Description">Enter your description</multiline>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr><td class="w180" width="180" height="10"></td></tr>
-                                </tbody></table>
-                              </td>
-                              <td width="20"></td>
-                              <td class="w180" width="180" valign="top">
-                                <table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
-                                  <tbody><tr>
-                                    <td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
-                                  </tr>
-                                  <tr><td class="w180" width="180" height="10"></td></tr>
-                                  <tr>
-                                    <td class="w180" width="180">
-                                      <div align="left" class="article-content">
-                                        <multiline label="Description">Enter your description</multiline>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr><td class="w180" width="180" height="10"></td></tr>
-                                </tbody></table>
-                              </td>
-                              <td width="20"></td>
-                              <td class="w180" width="180" valign="top">
-                                <table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
-                                  <tbody><tr>
-                                    <td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
-                                  </tr>
-                                  <tr><td class="w180" width="180" height="10"></td></tr>
-                                  <tr>
-                                    <td class="w180" width="180">
-                                      <div align="left" class="article-content">
-                                        <multiline label="Description">Enter your description</multiline>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  <tr><td class="w180" width="180" height="10"></td></tr>
-                                </tbody></table>
-                              </td>
-                            </tr>
-                          </tbody></table>
-                        </layout>
-                      </repeater>
-                    </td>
-                    <td class="w30" width="30"></td>
-                  </tr>
-                </tbody></table>
-              </td></tr>
-              <tr><td class="w640" width="640" height="15" bgcolor="#ffffff"></td></tr>
-
-              <tr>
-                <td class="w640" width="640">
-                  <table id="footer" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
-                    <tbody><tr><td class="w30" width="30"></td><td class="w580 h0" width="360" height="30"></td><td class="w0" width="60"></td><td class="w0" width="160"></td><td class="w30" width="30"></td></tr>
-                      <tr>
-                        <td class="w30" width="30"></td>
-                        <td class="w580" width="360" valign="top">
-                          <span class="hide"><p id="permission-reminder" align="left" class="footer-content-left">You&rsquo;re receiving this because you&rsquo;re an awesome ABC Widgets customer or subscribed via our site.</p></span>
-                          <p align="left" class="footer-content-left"><preferences>Edit your subscription</preferences> | <unsubscribe>Unsubscribe instantly</unsubscribe></p>
+                  <layout label="Text only">
+                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr>
+                        <td class="w580" width="580">
+                          <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                          <div align="left" class="article-content">
+                            <multiline label="Description">Enter your description</multiline>
+                          </div>
                         </td>
-                        <td class="hide w0" width="60"></td>
-                        <td class="hide w0" width="160" valign="top">
-                          <p id="street-address" align="right" class="footer-content-right">ABC Widgets
-                            87 Street Avenue, California</p>
-                          </td>
-                          <td class="w30" width="30"></td>
-                        </tr>
-                        <tr><td class="w30" width="30"></td><td class="w580 h0" width="360" height="15"></td><td class="w0" width="60"></td><td class="w0" width="160"></td><td class="w30" width="30"></td></tr>
-                      </tbody></table>
+                      </tr>
+                      <tr><td class="w580" width="580" height="10"></td></tr>
+                    </tbody></table>
+                  </layout>
+
+
+                  <layout label="Text with full-width image">
+                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr>
+                        <td class="w580" width="580">
+                          <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="w580" width="580"><img editable="true" label="Image" class="w580" width="580" border="0"></td>
+                      </tr>
+                      <tr><td class="w580" width="580" height="15"></td></tr>
+                      <tr>
+                        <td class="w580" width="580">
+                          <div align="left" class="article-content">
+                            <multiline label="Description">Enter your description</multiline>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td class="w580" width="580" height="10"></td></tr>
+                    </tbody></table>
+                  </layout>
+
+
+                  <layout label="Text with right-aligned image">
+                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr>
+                        <td class="w580" width="580">
+                          <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                          <table cellpadding="0" cellspacing="0" border="0" align="right">
+                            <tbody><tr>
+                              <td class="w30" width="15"></td>
+                              <td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
+                            </tr>
+                            <tr><td class="w30" width="15" height="5"></td><td></td></tr>
+                          </tbody></table>
+                          <div align="left" class="article-content">
+                            <multiline label="Description">Enter your description</multiline>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td class="w580" width="580" height="10"></td></tr>
+                    </tbody></table>
+                  </layout>
+
+
+                  <layout label="Text with left-aligned image">
+                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr>
+                        <td class="w580" width="580">
+                          <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                          <table cellpadding="0" cellspacing="0" border="0" align="left">
+                            <tbody><tr>
+                              <td><img editable="true" label="Image" class="w300" width="300" border="0"></td>
+                              <td class="w30" width="15"></td>
+                            </tr>
+                            <tr><td></td><td class="w30" width="15" height="5"></td></tr>
+                          </tbody></table>
+                          <div align="left" class="article-content">
+                            <multiline label="Description">Enter your description</multiline>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr><td class="w580" width="580" height="10"></td></tr>
+                    </tbody></table>
+                  </layout>
+
+
+                  <layout label="Two columns">
+                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr>
+                        <td class="w275" width="275" valign="top">
+                          <table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                              <td class="w275" width="275">
+                                <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                                <div align="left" class="article-content">
+                                  <multiline label="Description">Enter your description</multiline>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td class="w275" width="275" height="10"></td></tr>
+                          </tbody></table>
+                        </td>
+                        <td class="w30" width="30"></td>
+                        <td class="w275" width="275" valign="top">
+                          <table class="w275" width="275" cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                              <td class="w275" width="275">
+                                <p align="left" class="article-title"><singleline label="Title">Add a title</singleline></p>
+                                <div align="left" class="article-content">
+                                  <multiline label="Description">Enter your description</multiline>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td class="w275" width="275" height="10"></td></tr>
+                          </tbody></table>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                  </layout>
+
+
+
+                  <layout label="Image gallery">
+                    <table class="w580" width="580" cellpadding="0" cellspacing="0" border="0">
+                      <tbody><tr>
+                        <td class="w180" width="180" valign="top">
+                          <table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                              <td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
+                            </tr>
+                            <tr><td class="w180" width="180" height="10"></td></tr>
+                            <tr>
+                              <td class="w180" width="180">
+                                <div align="left" class="article-content">
+                                  <multiline label="Description">Enter your description</multiline>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td class="w180" width="180" height="10"></td></tr>
+                          </tbody></table>
+                        </td>
+                        <td width="20"></td>
+                        <td class="w180" width="180" valign="top">
+                          <table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                              <td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
+                            </tr>
+                            <tr><td class="w180" width="180" height="10"></td></tr>
+                            <tr>
+                              <td class="w180" width="180">
+                                <div align="left" class="article-content">
+                                  <multiline label="Description">Enter your description</multiline>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td class="w180" width="180" height="10"></td></tr>
+                          </tbody></table>
+                        </td>
+                        <td width="20"></td>
+                        <td class="w180" width="180" valign="top">
+                          <table class="w180" width="180" cellpadding="0" cellspacing="0" border="0">
+                            <tbody><tr>
+                              <td class="w180" width="180"><img editable="true" label="Image" class="w180" width="180" border="0"></td>
+                            </tr>
+                            <tr><td class="w180" width="180" height="10"></td></tr>
+                            <tr>
+                              <td class="w180" width="180">
+                                <div align="left" class="article-content">
+                                  <multiline label="Description">Enter your description</multiline>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr><td class="w180" width="180" height="10"></td></tr>
+                          </tbody></table>
+                        </td>
+                      </tr>
+                    </tbody></table>
+                  </layout>
+                </repeater>
+              </td>
+              <td class="w30" width="30"></td>
+            </tr>
+          </tbody></table>
+        </td></tr>
+        <tr><td class="w640" width="640" height="15" bgcolor="#ffffff"></td></tr>
+
+        <tr>
+          <td class="w640" width="640">
+            <table id="footer" class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f2f2">
+              <tbody><tr><td class="w30" width="30"></td><td class="w580 h0" width="360" height="30"></td><td class="w0" width="60"></td><td class="w0" width="160"></td><td class="w30" width="30"></td></tr>
+                <tr>
+                  <td class="w30" width="30"></td>
+                  <td class="w580" width="360" valign="top">
+                    <span class="hide"><p id="permission-reminder" align="left" class="footer-content-left">You&rsquo;re receiving this because you&rsquo;re an awesome ABC Widgets customer or subscribed via our site.</p></span>
+                    <p align="left" class="footer-content-left"><preferences>Edit your subscription</preferences> | <unsubscribe>Unsubscribe instantly</unsubscribe></p>
+                  </td>
+                  <td class="hide w0" width="60"></td>
+                  <td class="hide w0" width="160" valign="top">
+                    <p id="street-address" align="right" class="footer-content-right">ABC Widgets
+                      87 Street Avenue, California</p>
                     </td>
+                    <td class="w30" width="30"></td>
                   </tr>
-                  <tr><td class="w640" width="640" height="60"></td></tr>
+                  <tr><td class="w30" width="30"></td><td class="w580 h0" width="360" height="15"></td><td class="w0" width="60"></td><td class="w0" width="160"></td><td class="w30" width="30"></td></tr>
                 </tbody></table>
               </td>
             </tr>
-          </tbody></table></body></html>
+            <tr><td class="w640" width="640" height="60"></td></tr>
+          </tbody></table>
+        </td>
+      </tr>
+    </tbody></table></body></html>
