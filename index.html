@@ -64,7 +64,7 @@
       body { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
       .header-content, .footer-content-left, .footer-content-right { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; }
       /* Prevent Webkit and Windows Mobile platforms from changing default font sizes on header and footer. */
-      .header-content { font-size: 12px; color: #cccccc; }
+      .header-content { font-size: 12px; color: #316169; }
       .header-content a { font-weight: bold; color: #444444; text-decoration: none; }
       #headline p { color: #e7cba3; font-family: Helvetica Neue, Arial, Helvetica, Geneva, sans-serif; font-size: 36px; text-align: center; margin-top:0px; margin-bottom:30px; }
       #headline p a { color: #e7cba3; text-decoration: none; }
@@ -92,6 +92,7 @@
       .issue { font-size: 20px; font-weight: bold; color: #676767; }
       .date { font-size: 14px; color: #555;}
       .featured-title { font-size: 22px; font-weight: bold; color: #316169; padding: 2px 30px; }
+      .featured-content { font-size: 14px; font-weight: bold; color: #fff; padding: 20px 30px; }
       </style>
 <!--[if gte mso 9]>
 <style _tmplitem="277" >
@@ -109,7 +110,7 @@
         <tr><td class="w640" width="640" height="20"></td></tr>
         <tr id="top-bar">
           <td class="w640" width="640">
-            <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+            <table class="w640" width="640" cellpadding="0" cellspacing="0" border="0">
               <tbody>
                 <tr>
                   <td class="w15" width="15"></td>
@@ -161,7 +162,12 @@
         </tr>
         <tr id="featured-title">
           <td class="w640" width="640" cellpadding="0" cellspacing="0" border="0" bgcolor="#fff">
-            <div class="featured-title"><singleline label="Featured Title">Enter Featured Title Here</singleline></div>
+            <div class="featured-title"><singleline label="Featured Title">Enter Featured Title</singleline></div>
+          </td>
+        </tr>
+        <tr id="featured-content">
+          <td class="w640" width="640" height="192" cellpadding="0" cellspacing="0" border="0" bgcolor="#316169" background="http://data.plpltv.com/monitor/bg_mid.png">
+            <div class="featured-content"><multiline label="Featured Content">Enter Featured Content</multiline></div>
           </td>
         </tr>
         <tr id="simple-content-row"><td class="w640" width="640" bgcolor="#ffffff">
